@@ -1,4 +1,4 @@
 package com.github.kevinnowak;
 
-class Parrot {
+record Parrot(String name) {
 }
