@@ -1,2 +1,7 @@
-package com.github.kevinnowak.config;class ProjectConfig {
+package com.github.kevinnowak.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ProjectConfig {
 }
