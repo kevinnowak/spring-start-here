@@ -1,6 +1,6 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.beans;
 
-class Parrot {
+public class Parrot {
 
     private String name;
 
@@ -10,5 +10,10 @@ class Parrot {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Parrot: " + name;
     }
 }

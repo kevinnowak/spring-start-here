@@ -1,5 +1,8 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.main;
 
+import com.github.kevinnowak.beans.Parrot;
+import com.github.kevinnowak.beans.Person;
+import com.github.kevinnowak.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
