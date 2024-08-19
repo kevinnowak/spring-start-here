@@ -1,6 +1,6 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.beans;
 
-class Person {
+public class Person {
 
     private String name;
     private Parrot parrot;

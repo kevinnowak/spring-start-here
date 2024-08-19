@@ -1,6 +1,6 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.beans;
 
-class Parrot {
+public class Parrot {
 
     private String name;
 

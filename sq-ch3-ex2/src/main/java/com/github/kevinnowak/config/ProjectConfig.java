@@ -1,10 +1,12 @@
-package com.github.kevinnowak;
+package com.github.kevinnowak.config;
 
+import com.github.kevinnowak.beans.Parrot;
+import com.github.kevinnowak.beans.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-class ProjectConfig {
+public class ProjectConfig {
 
     @Bean
     public Parrot parrot() {
