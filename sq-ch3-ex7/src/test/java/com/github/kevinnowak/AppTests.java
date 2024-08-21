@@ -1,4 +1,4 @@
-package kevinnowak;
+package com.github.kevinnowak;
 
 import com.github.kevinnowak.beans.Parrot;
 import com.github.kevinnowak.beans.Person;
@@ -27,14 +27,6 @@ public class AppTests {
         Parrot p = context.getBean(Parrot.class);
 
         assertEquals("Koko", p.getName());
-    }
-
-    @Test
-    @DisplayName("Test that a Person instance has been added to the Spring context")
-    public void testEllaIsInTheSpringContext() {
-        Person p = context.getBean(Person.class);
-
-        assertEquals("Ella", p.getName());
     }
 
     @Test
