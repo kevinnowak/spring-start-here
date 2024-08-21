@@ -1,3 +1,5 @@
+package kevinnowak;
+
 import com.github.kevinnowak.beans.Parrot;
 import com.github.kevinnowak.beans.Person;
 import com.github.kevinnowak.config.ProjectConfig;
