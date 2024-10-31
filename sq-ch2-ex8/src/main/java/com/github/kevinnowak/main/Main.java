@@ -26,7 +26,7 @@ public class Main {
         context.registerBean("parrot1", Parrot.class, parrotSupplier1, bd -> bd.setPrimary(true));
         context.registerBean("parrot2", Parrot.class, parrotSupplier2);
 
-        System.out.println(context.getBean(Parrot.class).getName());
-        System.out.println(context.getBean(Parrot.class).getName());
+        System.out.println(context.getBean("parrot1", Parrot.class).getName());
+        System.out.println(context.getBean("parrot2", Parrot.class).getName());
     }
 }
