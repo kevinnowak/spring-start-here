@@ -2,7 +2,7 @@ package com.github.kevinnowak.main;
 
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 @Component
 public class Parrot {
