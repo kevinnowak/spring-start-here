@@ -44,5 +44,6 @@ public class AppTests {
         Person p = context.getBean(Person.class);
 
         assertNotNull(p.getParrot());
+        assertEquals("Koko", p.getParrot().getName());
     }
 }
