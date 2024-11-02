@@ -10,7 +10,7 @@ public class Person {
 
     private final Parrot parrot;
 
-    @Autowired
+    @Autowired // Can be omitted since Spring version 4.3 when there is only one constructor in the class
     public Person(Parrot parrot) {
         this.parrot = parrot;
     }
