@@ -5,6 +5,10 @@ public class Person {
     private String name;
     private Parrot parrot;
 
+    public Person() {
+        System.out.println("Person created");
+    }
+
     public String getName() {
         return name;
     }
