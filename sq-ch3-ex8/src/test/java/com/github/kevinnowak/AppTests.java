@@ -46,7 +46,7 @@ public class AppTests {
     }
 
     @Test
-    @DisplayName("Test that the Person instance in the Spring context" +
+    @DisplayName("Test that the Person instance in the Spring context " +
             "owns the Parrot instance named Miki from the Spring context")
     public void testEllaOwnsMiki() {
         Person p = context.getBean(Person.class);

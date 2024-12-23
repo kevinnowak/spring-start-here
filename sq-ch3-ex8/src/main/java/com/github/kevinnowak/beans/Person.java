@@ -6,7 +6,6 @@ public class Person {
     private Parrot parrot;
 
     public Person() {
-        System.out.println("Person created");
     }
 
     public String getName() {
