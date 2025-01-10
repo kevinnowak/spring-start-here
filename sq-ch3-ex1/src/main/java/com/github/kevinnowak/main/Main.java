@@ -15,5 +15,12 @@ public class Main {
         System.out.printf("Person's name: %s\n", person.getName());
         System.out.printf("Parrot's name: %s\n", parrot.getName());
         System.out.printf("Person's parrot: %s\n", person.getParrot());
+
+        // Printing the names of the beans in the context
+        String[] beanNames = context.getBeanDefinitionNames();
+
+        for (String beanName : beanNames) {
+            System.out.println(beanName);
+        }
     }
 }
