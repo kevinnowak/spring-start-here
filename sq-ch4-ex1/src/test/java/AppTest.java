@@ -28,4 +28,3 @@ public class AppTest {
         verify(commentNotificationProxy).sendComment(comment);
     }
 }
-
