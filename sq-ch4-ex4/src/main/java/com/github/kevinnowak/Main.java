@@ -10,6 +10,7 @@ public class Main {
         var context = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
 
         var comment = new Comment("Kevin", "Lorem ipsum...");
+        var s = new String();
 
         var commentService = context.getBean(CommentService.class);
         commentService.publishComment(comment);
