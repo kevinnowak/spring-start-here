@@ -26,7 +26,7 @@ public class AppTest {
     private CommentService commentService;
 
     @Test
-    @DisplayName("Verify that dependencies of the CommentService object are correctly called.")
+    @DisplayName("Verify that dependencies of the CommentService object are correctly called")
     public void testCommentService() {
         var comment = new Comment("Kevin", "Lorem ipsum...");
         commentService.publishComment(comment);
