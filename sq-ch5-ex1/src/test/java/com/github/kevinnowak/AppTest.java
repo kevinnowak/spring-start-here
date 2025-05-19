@@ -2,6 +2,7 @@ package com.github.kevinnowak;
 
 import com.github.kevinnowak.config.ProjectConfig;
 import com.github.kevinnowak.services.CommentService;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,11 @@ public class AppTest {
     private ApplicationContext context;
 
     @Test
+    @DisplayName("Check if the bean is a singleton")
     public void testCommentServiceIsSingleton() {
         var cs1 = context.getBean("commentService", CommentService.class);
         var cs2 = context.getBean("commentService", CommentService.class);
+
         assertEquals(cs1, cs2);
     }
 }
