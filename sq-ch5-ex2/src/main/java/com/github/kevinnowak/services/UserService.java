@@ -1,14 +1,16 @@
 package com.github.kevinnowak.services;
 
 import com.github.kevinnowak.repositories.CommentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
 
-    @Autowired
-    private CommentRepository commentRepository;
+    private final CommentRepository commentRepository;
+
+    public UserService(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
 
     public CommentRepository getCommentRepository() {
         return commentRepository;
