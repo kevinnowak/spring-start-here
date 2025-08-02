@@ -1,5 +1,7 @@
 package com.github.kevinnowak;
 
+import static org.mockito.Mockito.verify;
+
 import com.github.kevinnowak.model.Comment;
 import com.github.kevinnowak.proxy.CommentNotificationProxy;
 import com.github.kevinnowak.repository.CommentRepository;
@@ -10,8 +12,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 public class AppTest {

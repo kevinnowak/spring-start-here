@@ -3,8 +3,6 @@ package com.github.kevinnowak.service;
 import com.github.kevinnowak.model.Comment;
 import com.github.kevinnowak.proxy.CommentNotificationProxy;
 import com.github.kevinnowak.repository.CommentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 public class CommentService {
 
