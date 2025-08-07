@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.logging.Logger;
 
 @Aspect
+@Order(1)
 @Component
 public class SecurityAspect {
 

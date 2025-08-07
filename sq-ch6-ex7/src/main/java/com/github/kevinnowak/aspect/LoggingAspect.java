@@ -9,19 +9,19 @@ import org.springframework.stereotype.Component;
 import java.util.logging.Logger;
 
 @Aspect
+@Order(2)
 @Component
-public class SecurityAspect {
+public class LoggingAspect {
 
-    private Logger logger = Logger.getLogger(SecurityAspect.class.getName());
+    private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
     @Around(value = "@annotation(ToLog)")
-    public Object secure(ProceedingJoinPoint joinPoint) throws Throwable {
-        logger.info("Security Aspect: Calling the intercepted method");
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        logger.info("Logging Aspect: Calling the intercepted method");
         Object returnedValue = joinPoint.proceed();
-        logger.info("Security Aspect: Method executed and returned " + returnedValue);
+        logger.info("Logging Aspect: Method executed and returned " + returnedValue);
 
-        return returnedValue;
-    }
+        return returnedValue;    }
 
     public void setLogger(Logger logger) {
         this.logger = logger;
