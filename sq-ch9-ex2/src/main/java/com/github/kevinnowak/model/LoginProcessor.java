@@ -1,5 +1,6 @@
 package com.github.kevinnowak.model;
 
+import com.github.kevinnowak.services.LoggedUserManagementService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
@@ -7,14 +8,27 @@ import org.springframework.web.context.annotation.RequestScope;
 @RequestScope
 public class LoginProcessor {
 
+    private final LoggedUserManagementService loggedUserManagementService;
+
     private String username;
     private String password;
+
+    public LoginProcessor(LoggedUserManagementService loggedUserManagementService) {
+        this.loggedUserManagementService = loggedUserManagementService;
+    }
 
     public boolean login() {
         String username = this.getUsername();
         String password = this.getPassword();
 
-        return "magdalena".equals(username) && "password".equals(password);
+        boolean loginResult = false;
+
+        if ("magdalena".equals(username) && "password".equals(password)) {
+            loginResult = true;
+            loggedUserManagementService.setUsername(username);
+        }
+
+        return loginResult;
     }
 
     public String getPassword() {
