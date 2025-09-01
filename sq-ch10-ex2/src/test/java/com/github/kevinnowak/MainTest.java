@@ -1,4 +1,4 @@
-package kevinnowak;
+package com.github.kevinnowak;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
