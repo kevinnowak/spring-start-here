@@ -11,8 +11,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <groupId>com.github.kevinnowak</groupId>
-    <artifactId>sq-ch10-ex3</artifactId>
+    <artifactId>sq-ch10-ex4</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -41,5 +42,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
